@@ -2,5 +2,7 @@
 - name: Converge
   hosts: all
   roles:
-    - role: ome.omero_web
-    - role: ome.omero_web_django_prometheus
+    - name: omero_web
+      src: https://github.com/pwalczysko/ansible-role-omero-web
+      version: p312
+    - name: ome.omero_web_django_prometheus
