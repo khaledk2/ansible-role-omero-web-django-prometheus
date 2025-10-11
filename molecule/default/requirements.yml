@@ -1,5 +1,5 @@
 ---
-- name: omero_web
+- name: ome.omero_web
   src:  https://github.com/pwalczysko/ansible-role-omero-web
   version: p312
 
