@@ -12,6 +12,12 @@
         # update only if the last update is older than one day
         cache_valid_time: 86400
 
+    - name: Create a new directory
+      ansible.builtin.file:
+        path: /run/gnupg
+        state: directory
+        mode: 700
+
   roles:
     - name: ome.omero_web
       src: https://github.com/pwalczysko/ansible-role-omero-web
