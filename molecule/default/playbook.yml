@@ -1,7 +1,7 @@
 ---
 - name: Converge
   hosts: all
-  taks:
+  tasks:
     - name: install dirmngr
       apt:
         dirmngr
