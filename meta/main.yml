@@ -18,4 +18,6 @@ galaxy_info:
 
 dependencies:
   # Required for omero-web handlers
-  - role: ome.omero_common
+  - name: omero_common
+    src: https://github.com/pwalczysko/ansible-role-omero-common
+    version: update-framework
