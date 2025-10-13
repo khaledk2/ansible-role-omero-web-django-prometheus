@@ -2,12 +2,15 @@
 - name: Converge
   hosts: all
   tasks:
-    - name: install dirmngr
-      apt:
+    - name: install packages
+      ansible.builtin.apt:
         name:
           - dirmngr
           - gnupg
         state: present
+        update_cache: yes
+        # update only if the last update is older than one day
+        cache_valid_time: 86400
 
   roles:
     - name: ome.omero_web
