@@ -4,7 +4,9 @@
   tasks:
     - name: install dirmngr
       apt:
-        name: dirmngr
+        name:
+          - dirmngr
+          - gnupg
         state: present
         update_cache: true
         cache_valid_time: 86400
