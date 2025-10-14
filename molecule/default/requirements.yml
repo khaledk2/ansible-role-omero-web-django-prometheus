@@ -1,8 +1,10 @@
 ---
+- name: omero_common
+  src: https://github.com/pwalczysko/ansible-role-omero-common
+  version: update-framework
+
 - name: omero_web
   src: https://github.com/pwalczysko/ansible-role-omero-web
   version: p312
-- name: ome.omero_common
-  src: https://github.com/pwalczysko/ansible-role-omero-common
-  version: update-framework
+
 
